@@ -4,15 +4,15 @@ describe("test job application flow", () => {
     context("avoide an uncaught error", () => {
         Cypress.on('uncaught:exception', (err, runnable) => {
             return false
+            
         })
 
         it("visit website", () => {
             cy.visit("https://appunite.com/")
-            cy.viewport(1024, 768)
             cy.get(".LinksContainer_wrapper__1NrQw").contains("Career").click({ force: true })
             cy.contains(".CareerOffers_offerTitle__3-TYj", "QA Engineer").click()
             cy.get(".OfferSidebar_button__x6yhH").contains("Apply now").invoke('removeAttr', 'target').click()
-
+        
         })
 
         context("application form", () => {

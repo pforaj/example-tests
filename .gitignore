@@ -1,3 +1,6 @@
 node_modules/
 cypress/support/
+cypress/plugins/
+cypress/support/
+
 

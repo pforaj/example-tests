@@ -1,0 +1,8 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {},
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8"
+  }
+}
